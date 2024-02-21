@@ -31,9 +31,9 @@ export const Navegacion = () => {
       for (const i of car) sum = sum + i.price;
       return (
           <div className='total'>
-            <p className='total-p1' id='carrito'>🛒</p>
-            <p className='total-p2' ref={changeCar1}>({car.length})</p>
-            <p className='total-p3' ref={changeCar}>${sum.toLocaleString()}</p>
+            <div><p className='total-p1' id='carrito'>🛒</p></div>
+            <div><p className='total-p2' ref={changeCar1}>({car.length})</p></div>
+            <div><p className='total-p3' ref={changeCar}>${sum.toLocaleString()}</p></div>
           </div>
       );
     

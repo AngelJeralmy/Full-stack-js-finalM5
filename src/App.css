@@ -62,15 +62,19 @@
 }
 
 /* Navbar */
+
 #navegation{
   position: fixed;
   top: 0;
   left: 10%;
   z-index: 1;
+  height: auto;
 }
 .isActive{
   color: rgb(5, 7, 5);
   padding-left: 10px;
+  height: auto;
+  width: auto;
 }
 .isntActive{
   color: rgb(253, 252, 252);
@@ -95,10 +99,12 @@
 }
 .total{
   width: 118px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .total-p1{
   width: 20px;
@@ -320,12 +326,27 @@
 section{
   width: 60%;
   height: auto;
-  margin-top: 10px;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   z-index: 0;
 }
+@media screen and (max-width: 520px) {
+
+  section {
+    margin-top: 10%;
+  }
+
+}
+@media  screen and (max-width: 507px){
+  
+  section {
+    margin-top: 20%;
+  }
+
+}
+
 section button{
   color: white;
   font-size: 15px;
@@ -347,12 +368,14 @@ section p{
   text-align: left;
   color: black;
   font-size: 30px;
+  /* background-color: black; */
 }
 .carrito-pizza{
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 5px;
   border: 1px rgb(201, 197, 197) solid;
   padding: 3px;
@@ -367,6 +390,7 @@ section p{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .carrito-pizza-left p{
   margin-left: 10px;
@@ -385,6 +409,7 @@ section p{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .carrito-pizza-right-int{
   display: flex;

@@ -63,7 +63,7 @@ export const Carrito = () => {
   return (
     <>
       {car.length == 0 ? (<div className="car0"><p>¡Ops! Esto parece estar vacío <p className="tohome" onClick={()=>GoToHome()}>Ir a añadir</p></p></div>) : (<section>
-        <p>Detalle del pedido:</p>
+        <p className="detalle_del_pedido">Detalle del pedido:</p>
         {render.map((i, x) => (
           <div className="carrito-pizza" key={i.name}>
             <div className="carrito-pizza-left">
