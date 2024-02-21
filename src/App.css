@@ -95,6 +95,10 @@
 }
 .total{
   width: 118px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .total-p1{
   width: 20px;
